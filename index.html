@@ -222,7 +222,7 @@
       figure.className = "mb-4";
 
       const img = document.createElement("img");
-      img.src = encodeURIComponent(month) + ".jpeg";
+      img.src = encodeURIComponent(month.replace(/\s/g, '')) + ".jpeg";
       img.alt = `${month} image`;
       img.className = "w-full h-40 object-cover rounded-md";
 
