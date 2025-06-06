@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annual Event Calendar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .max-w-7xl{
+        padding-top: 1rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header with Responsive Banner -->
+  <header class="bg-blue-600 text-white pb-6 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="overflow-hidden rounded-xl mb-4">
+        <img src="WhatsApp Image 2025-06-06 at 12.08.33 PM.png"
+             alt="Banner"
+             class="w-full h-auto max-h-[50vh] object-cover" />
+      </div>
+      <h1 class="text-3xl font-bold">ANNUAL EVENT CALENDAR</h1>
+      <p class="text-sm mt-1">June 2025 – August 2026</p>
+      <p class="text-sm">Friends' Club – Laheriasarai, Darbhanga</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Calendar blocks will be injected here -->
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 text-center py-6 mt-10 text-sm text-gray-500">
+    &copy; 2025 Friends' Club, Laheriasarai, Darbhanga. All rights reserved.
+  </footer>
+
+  <script>
+     const events = {
+      "June 2025": [
+        "01 (Sunday): Sunday Session",
+        "05 (Thursday): Thursday Session",
+        "08 (Sunday): Sunday Session",
+        "12 (Thursday): Thursday Session",
+        "15 (Sunday): Sunday Session",
+        "19 (Thursday): Thursday Session",
+        "22 (Sunday): Sunday Session",
+        "26 (Thursday): Thursday Session",
+        "29 (Sunday): Mega Quiz"
+      ],
+      "July 2025": [
+        "03 (Thursday): Thursday Session",
+        "06 (Sunday): Sunday Session",
+        "10 (Thursday): Thursday Session",
+        "13 (Sunday): Sunday Session",
+        "17 (Thursday): Thursday Session",
+        "20 (Sunday): Sunday Session",
+        "24 (Thursday): Thursday Session",
+        "27 (Sunday): Mega Quiz",
+        "31 (Thursday): Thursday Session"
+      ],
+      "August 2025": [
+        "03 (Sunday): Sunday Session",
+        "07 (Thursday): Thursday Session",
+        "10 (Sunday): Sunday Session",
+        "14 (Thursday): Thursday Session",
+        "15 (Friday): Independence Day",
+        "17 (Sunday): Sunday Session",
+        "21 (Thursday): Thursday Session",
+        "24 (Sunday): Sunday Session",
+        "28 (Thursday): Thursday Session",
+        "31 (Sunday): Mastermind"
+      ],
+      "September 2025": [
+        "04 (Thursday): Thursday Session",
+        "07 (Sunday): Sunday Session",
+        "11 (Thursday): Thursday Session",
+        "14 (Sunday): Sunday Session",
+        "18 (Thursday): Thursday Session",
+        "21 (Sunday): Sunday Session",
+        "25 (Thursday): Thursday Session",
+        "28 (Sunday): Mega Quiz"
+      ],
+      "October 2025": [
+        "02 (Thursday): Cleaning Program",
+        "05 (Sunday): Sunday Session",
+        "09 (Thursday): Thursday Session",
+        "12 (Sunday): Sunday Session",
+        "16 (Thursday): Thursday Session",
+        "19 (Sunday): Sunday Session",
+        "20 (Monday): Diwali Celebration",
+        "23 (Thursday): Thursday Session",
+        "26 (Sunday): Mega Quiz",
+        "30 (Thursday): Thursday Session"
+      ],
+      "November 2025": [
+        "02 (Sunday): Sunday Session",
+        "06 (Thursday): Thursday Session",
+        "09 (Sunday): Sunday Session",
+        "13 (Thursday): Thursday Session",
+        "16 (Sunday): Sunday Session",
+        "20 (Thursday): Thursday Session",
+        "23 (Sunday): Sunday Session",
+        "27 (Thursday): Thursday Session",
+        "30 (Sunday): Mastermind"
+      ],
+      "December 2025": [
+        "04 (Thursday): Thursday Session",
+        "07 (Sunday): Sunday Session",
+        "11 (Thursday): Thursday Session",
+        "14 (Sunday): Sunday Session",
+        "18 (Thursday): Thursday Session",
+        "21 (Sunday): Sunday Session",
+        "24 (Wednesday): Secret Santa",
+        "25 (Thursday): Thursday Session",
+        "28 (Sunday): Mega Quiz"
+      ],
+      "January 2026": [
+        "01 (Thursday): New Year Get-Together",
+        "04 (Sunday): Sunday Session",
+        "08 (Thursday): Thursday Session",
+        "11 (Sunday): Sunday Session",
+        "15 (Thursday): Thursday Session",
+        "18 (Sunday): Sunday Session",
+        "22 (Thursday): Thursday Session",
+        "23 (Friday): Vasant Panchami",
+        "25 (Sunday): Mega Quiz",
+        "26 (Monday): Republic Day",
+        "29 (Thursday): Thursday Session"
+      ],
+      "February 2026": [
+        "01 (Sunday): Sunday Session",
+        "05 (Thursday): Thursday Session",
+        "08 (Sunday): Sunday Session",
+        "12 (Thursday): Thursday Session",
+        "15 (Sunday): Sunday Session",
+        "19 (Thursday): Thursday Session",
+        "22 (Sunday): Sunday Session",
+        "26 (Thursday): Thursday Session",
+        "29 (Sunday): Mastermind"
+      ],
+      "March 2026": [
+        "01 (Sunday): Sunday Session",
+        "04 (Wednesday): Holi Meet",
+        "05 (Thursday): Thursday Session",
+        "08 (Sunday): Sunday Session",
+        "12 (Thursday): Thursday Session",
+        "15 (Sunday): Sunday Session",
+        "19 (Thursday): Thursday Session",
+        "22 (Sunday): Sunday Session",
+        "26 (Thursday): Thursday Session",
+        "29 (Sunday): Mega Quiz"
+      ],
+      "April 2026": [
+        "02 (Thursday): Thursday Session",
+        "05 (Sunday): Sunday Session",
+        "09 (Thursday): Thursday Session",
+        "12 (Sunday): Sunday Session",
+        "16 (Thursday): Thursday Session",
+        "19 (Sunday): Sunday Session",
+        "23 (Thursday): Thursday Session",
+        "26 (Sunday): Mega Quiz",
+        "30 (Thursday): Thursday Session"
+      ],
+      "May 2026": [
+        "03 (Sunday): Sunday Session",
+        "07 (Thursday): Thursday Session",
+        "10 (Sunday): Sunday Session",
+        "14 (Thursday): Thursday Session",
+        "17 (Sunday): Sunday Session",
+        "21 (Thursday): Thursday Session",
+        "24 (Sunday): Sunday Session",
+        "28 (Thursday): Thursday Session",
+        "31 (Sunday): Mastermind"
+      ],
+      "June 2026": [
+        "04 (Thursday): Thursday Session",
+        "07 (Sunday): Sunday Session",
+        "11 (Thursday): Thursday Session",
+        "14 (Sunday): Sunday Session",
+        "18 (Thursday): Thursday Session",
+        "21 (Sunday): Sunday Session",
+        "25 (Thursday): Thursday Session",
+        "28 (Sunday): Mega Quiz"
+      ],
+      "July 2026": [
+        "02 (Thursday): Thursday Session",
+        "05 (Sunday): Sunday Session",
+        "09 (Thursday): Thursday Session",
+        "12 (Sunday): Sunday Session",
+        "16 (Thursday): Thursday Session",
+        "19 (Sunday): Sunday Session",
+        "23 (Thursday): Thursday Session",
+        "26 (Sunday): Mega Quiz",
+        "30 (Thursday): Thursday Session"
+      ],
+      "August 2026": [
+        "02 (Sunday): Sunday Session",
+        "06 (Thursday): Thursday Session",
+        "09 (Sunday): Sunday Session",
+        "13 (Thursday): Thursday Session",
+        "16 (Sunday): Sunday Session",
+        "20 (Thursday): Thursday Session",
+        "23 (Sunday): Sunday Session",
+        "27 (Thursday): Thursday Session",
+        "30 (Sunday): Mastermind"
+      ]
+    };
+
+
+    const container = document.querySelector("main > div");
+
+    for (const [month, list] of Object.entries(events)) {
+      const div = document.createElement("div");
+      div.className = "bg-white rounded-2xl shadow p-6 hover:shadow-lg transition flex flex-col";
+
+      // Monthly Image with Caption
+      const figure = document.createElement("figure");
+      figure.className = "mb-4";
+
+      const img = document.createElement("img");
+      img.src = encodeURIComponent(month) + ".jpeg";
+      img.alt = `${month} image`;
+      img.className = "w-full h-40 object-cover rounded-md";
+
+      const figcaption = document.createElement("figcaption");
+      figcaption.className = "text-xs text-gray-500 text-center mt-2";
+      figcaption.textContent = `Highlights of ${month}`;
+
+      figure.appendChild(img);
+      figure.appendChild(figcaption);
+      div.appendChild(figure);
+
+      // Month Title
+      const title = document.createElement("h2");
+      title.className = "text-xl font-semibold text-blue-600 mb-4";
+      title.textContent = month;
+      div.appendChild(title);
+
+      // Events List
+      const ul = document.createElement("ul");
+      ul.className = "list-disc list-inside space-y-2 text-gray-700";
+      for (const item of list) {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ul.appendChild(li);
+      }
+
+      div.appendChild(ul);
+      container.appendChild(div);
+    }
+  </script>
+
+</body>
+</html>
